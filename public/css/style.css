@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  background-image: url(../img/home-bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.home_logo {
+  width: 25vw;
+  display: block;
+  margin: 0 auto 5vw;
+}
+
+.home_nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home_nav > ul > li {
+  position: relative;
+}
+
+.home_nav > ul > li:last-child a::after {
+  display: none;
+}
+
+.home_nav > ul > li:hover > a {
+  padding: 10px 20px 10px 50px;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #0069A9;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.home_nav > ul > li:hover > a::after {
+  opacity: 0;
+}
+
+.home_nav > ul > li:hover > a.haschild::before {
+  opacity: 1;
+}
+
+.home_nav > ul > li:hover .home_nav_triangle {
+  opacity: 1;
+}
+
+.home_nav > ul > li:hover .home_nav_second {
+  opacity: 1;
+}
+
+.home_nav > ul > li > a {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 0 50px;
+  display: block;
+  position: relative;
+}
+
+.home_nav > ul > li > a::after {
+  position: absolute;
+  content: "";
+  width: 0.7vw;
+  padding-bottom: calc(0.7vw * 2.33);
+  background-image: url(../img/divide.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home_nav > ul > li > a.haschild::before {
+  position: absolute;
+  content: "";
+  width: 0.6vw;
+  height: 0.3vw;
+  background-image: url(../img/triangle-2.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 25px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home_nav_triangle {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+}
+
+.home_nav_second {
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-top: 20px;
+}
+
+.home_nav_second li {
+  margin-bottom: 15px;
+}
+
+.home_nav_second a {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 20px 10px 50px;
+  position: relative;
+}
+
+.home_nav_second a::before {
+  position: absolute;
+  content: "";
+  width: 1.23vw;
+  height: 1.24vw;
+  background-image: url(../img/leaf.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.home_nav_second a:hover {
+  color: #FFF56E;
+}
+
+.home_nav_second a:hover::before {
+  opacity: 1;
+}
+
+.home_bird {
+  position: absolute;
+  width: 34vw;
+  top: 4.59vw;
+  right: -7.68vw;
+}
+/*# sourceMappingURL=style.css.map */

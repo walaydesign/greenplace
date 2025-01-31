@@ -1,0 +1,150 @@
+.home {
+    background-image: url(../img/home-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &_content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &_logo {
+        width: 25vw;
+        display: block;
+        margin: 0 auto 5vw;
+    }
+    &_nav {
+        >ul {
+            display: flex;
+            align-items: center;
+            >li {
+                position: relative;
+                &:last-child {
+                    a {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+                &:hover {
+                    >a {
+                        padding: 10px 20px 10px 50px;
+                        background-color: #fff;
+                        transition: $transition;
+                        color: #0069A9;
+                        text-shadow: none;
+                        cursor: pointer;
+                        &::after {
+                            opacity: 0;
+                        }
+                        &.haschild {
+                            &::before {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .home_nav_triangle {
+                        opacity: 1;
+                    }
+                    .home_nav_second {
+                        opacity: 1;
+                    }
+                }
+                >a {
+                    font-size: 32px;
+                    color: #fff;
+                    font-weight: 700;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+                    padding: 0 50px;
+                    display: block;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 0.7vw;
+                        padding-bottom: calc(0.7vw * 2.33);
+                        background-image: url(../img/divide.svg);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        top: 50%;
+                        right: 0;
+                        transform: translate(50%, -50%);
+                        transition: $transition;
+                    }
+                    &.haschild {
+                        // padding: 10px 20px 10px 50px;
+                        // background-color: #fff;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            width: 0.6vw;
+                            height: 0.3vw;
+                            background-image: url(../img/triangle-2.svg);
+                            background-size: contain;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            top: 50%;
+                            left: 25px;
+                            opacity: 0;
+                            transition: $transition;
+                        }
+                    }
+                }
+            }
+        }
+        &_triangle {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            opacity: 0;
+        }
+        &_second {
+            position: absolute;
+            top: 100%;
+            opacity: 0;
+            transition: $transition;
+            padding-top: 20px;
+            li {
+                margin-bottom: 15px;
+            }
+            a {
+                font-size: 28px;
+                color: #fff;
+                font-weight: 500;
+                padding: 10px 20px 10px 50px;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 1.23vw;
+                    height: 1.24vw;
+                    background-image: url(../img/leaf.svg);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    top: 50%;
+                    left: 15px;
+                    transform: translateY(-50%);
+                    transition: $transition;
+                    opacity: 0;
+                }
+                &:hover {
+                    color: #FFF56E;
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &_bird {
+        position: absolute;
+        width: 34vw;
+        top: 4.59vw;
+        right: -7.68vw;
+    }
+}
