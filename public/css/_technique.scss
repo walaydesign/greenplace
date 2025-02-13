@@ -1,0 +1,102 @@
+.material {
+    background-image: url(../img/material-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &_main {
+        width: 80%;
+        margin: 0 auto;
+        .title {
+            margin-bottom: 3.5vw;
+            &_ch {
+                color: #fff;
+                span {
+                    &::after {
+                        background-color: #fff;
+                    }
+                }
+            }
+            &_en {
+                color: #fff;
+            }
+        }
+    }
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &_item {
+        width: 25%;
+        padding: 0 1.7vw;
+        a {
+            display: block;
+            width: 100%;
+            padding-bottom: 100%;
+            border-radius: 100%;
+            position: relative;
+            overflow: hidden;
+            >img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+            }
+            >span {
+                position: absolute;
+                display: block;
+                width: 100%;
+                text-align: center;
+                color: #fff;
+                font-size: 15px;
+                text-shadow: 0 0 2.5px #000;
+                bottom: 7.6%;
+                left: 0;
+            }
+            &:hover {
+                .material_item_hover {
+                    opacity: 1;
+                }
+            }
+        }
+        &_circle {
+            position: absolute;
+            width: 92%;
+            padding-bottom: 92%;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &_hover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0,0,0,0.8);
+            opacity: 0;
+            transition: $transition;
+            >img {
+                width: 77.85%;
+                display: block;
+                margin: 0 auto 0px;
+            }
+            >span {
+                color: #fff;
+                font-size: 26px;
+                font-weight: 700;
+                text-shadow: 0 0 5px rgba(0,0,0,0.5);
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}

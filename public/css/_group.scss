@@ -105,7 +105,7 @@
     }
     &_row {
         display: flex;
-        margin-bottom: 3.2vw;
+        margin-bottom: 3vw;
         position: relative;
         &.middle {
             &::before {
@@ -114,7 +114,7 @@
                 width: 12.5%;
                 height: 1px;
                 background-color: #154C1B;
-                top: 32%;
+                top: 33.6%;
                 right: 100%;
             }
             &::after {
@@ -134,7 +134,7 @@
                 width: 12.5%;
                 height: 1px;
                 background-color: #154C1B;
-                top: 32.2%;
+                top: 33.6%;
                 right: 100%;
             }
         }
