@@ -113,6 +113,11 @@ a {
                     }
                 }
             }
+            &.noborder {
+                &::after {
+                    display: none;
+                }
+            }
         }
         &_item {
             position: absolute;

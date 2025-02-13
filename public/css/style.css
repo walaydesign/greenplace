@@ -126,6 +126,10 @@ a {
   opacity: 1;
 }
 
+.nav_list > li.noborder::after {
+  display: none;
+}
+
 .nav_list_item {
   position: absolute;
   width: 100%;
