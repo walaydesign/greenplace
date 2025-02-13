@@ -13,9 +13,11 @@
     &_logo {
         width: 25vw;
         display: block;
-        margin: 0 auto 5vw;
+        margin: 0 auto;
     }
     &_nav {
+        margin-top: calc(5vw - 10px);
+        padding-top: 10px;
         >ul {
             display: flex;
             align-items: center;
@@ -30,7 +32,8 @@
                 }
                 &:hover {
                     >a {
-                        padding: 10px 20px 10px 50px;
+                        padding: 10px 30px 10px 30px;
+                        margin-left: 20px;
                         background-color: #fff;
                         transition: $transition;
                         color: #0069A9;
@@ -40,6 +43,7 @@
                             opacity: 0;
                         }
                         &.haschild {
+                            padding: 10px 20px 10px 50px;
                             &::before {
                                 opacity: 1;
                             }
@@ -60,6 +64,7 @@
                     padding: 0 50px;
                     display: block;
                     position: relative;
+                    transition: $transition;
                     &::after {
                         position: absolute;
                         content: "";
@@ -99,7 +104,7 @@
             position: absolute;
             height: 100%;
             top: 0;
-            left: 100%;
+            left: calc(100% - 1px);
             opacity: 0;
         }
         &_second {
@@ -139,6 +144,10 @@
                     }
                 }
             }
+        }
+        &:hover {
+            // margin-top: calc(5vw - 15px);
+            padding-top: 0;
         }
     }
     &_bird {
