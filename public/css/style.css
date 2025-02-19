@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -259,6 +259,13 @@ a {
   width: 27%;
   right: 0;
   bottom: 0;
+}
+
+.deco-tree {
+  position: absolute;
+  width: 3.02vw;
+  left: 6.56vw;
+  bottom: 1.79vw;
 }
 
 .title {
@@ -916,7 +923,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #94B53E;
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -935,5 +942,358 @@ a {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   display: block;
   text-align: center;
+}
+
+.material-inner_main {
+  padding: 4.83vw 4.91vw;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.material-inner_bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 43px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: calc(5.51vw + 104px) 8.18vw 0;
+}
+
+.material-inner_bg.innerr {
+  padding: 0 9.49vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.material-inner_bg.innerr .material-inner_list li {
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.material-inner_bg.sakura {
+  background-image: url(../img/sakura-bg.webp);
+}
+
+.material-inner_title {
+  position: absolute;
+  left: 0;
+  top: 6.88vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.material-inner_title_ch {
+  padding: 1.28vw 6.41vw 1.28vw 5.74vw;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 89, 169, 0.2)), to(#1D59A9));
+  background: linear-gradient(to right, rgba(29, 89, 169, 0.2) 0%, #1D59A9 100%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0 100px 100px 0;
+  margin-right: 1.82vw;
+}
+
+.material-inner_title_ch h1 {
+  margin: 0;
+  padding-left: 2.33vw;
+  position: relative;
+  font-size: 38px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+
+.material-inner_title_ch h1::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 31px;
+  background-color: #FFD663;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.material-inner_title_en {
+  font-family: "Noto Serif TC", serif;
+  color: rgba(157, 176, 192, 0.25);
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.material-inner_list li {
+  padding-left: 1.53vw;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 0.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.material-inner_list li::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #005EAD;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.material-inner_list li:last-child {
+  margin-bottom: 0;
+}
+
+.material-inner_list li span {
+  display: block;
+  position: relative;
+  padding-right: 1.75vw;
+}
+
+.material-inner_list li span::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 25px;
+  background-color: #000;
+  top: 50%;
+  right: 0.88vw;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.material-inner_list li span:last-child::after {
+  display: none;
+}
+
+.material-inner_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -1.11vw;
+  margin-right: -1.11vw;
+  width: 100%;
+}
+
+.material-inner_row_item {
+  padding-left: 1.11vw;
+  padding-right: 1.11vw;
+}
+
+.material-inner_row_item > a {
+  display: block;
+  border-radius: 45px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 3.12vw 0 1.51vw;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.material-inner_row_item > a > img {
+  width: 95%;
+  display: block;
+  margin: 0 auto 1.87vw;
+}
+
+.material-inner_row_item > a h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 300;
+  color: #005EAD;
+  font-size: 34px;
+  position: relative;
+  letter-spacing: 0.15em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.material-inner_row_item > a h3::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 20px;
+  background-image: url(../img/leaf-blue.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: -40px;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.material-inner_row_item > a:hover {
+  background-color: rgba(151, 154, 153, 0.6);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.material-inner_row_item > a:hover h3 {
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.material-inner_row_item > a:hover h3::before {
+  opacity: 1;
+}
+
+.material-inner_row.sakura .material-inner_row_item {
+  width: 33.3333%;
+}
+
+.material-innerr_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+.material-innerr_en {
+  margin: 0;
+  color: rgba(157, 176, 192, 0.25);
+  font-family: "Noto Serif TC", serif;
+  font-size: 40px;
+  letter-spacing: 0.2em;
+}
+
+.material-innerr_title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 0.25em;
+}
+
+.material-innerr_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 35px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.material-innerr_info li {
+  position: relative;
+  font-size: 28px;
+  font-weight: 300;
+  color: #231815;
+  padding-right: 35px;
+  letter-spacing: 0.17em;
+}
+
+.material-innerr_info li::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 24px;
+  background-color: #231815;
+  top: 50%;
+  right: 18px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.material-innerr_info li:last-child {
+  padding-right: 0;
+}
+
+.material-innerr_info li:last-child::after {
+  display: none;
+}
+
+.material-innerr_head {
+  margin-bottom: 70px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.material-innerr_bird {
+  position: absolute;
+  width: 12.19vw;
+  top: 8.12%;
+  left: 102%;
+}
+
+.material-innerr_product {
+  width: 100%;
+}
+
+.sakura_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.03vw;
+}
+
+.sakura_logo {
+  width: 7.32vw;
+  margin-right: 2.94vw;
+}
+
+.sakura_bird {
+  position: absolute;
+  width: 12.19vw;
+  top: 13.39vw;
+  right: 11.29vw;
+}
+
+.sakura-inner_item {
+  width: 50%;
+}
+
+.sakura-inner_logo {
+  width: 4.55vw;
+  margin-right: 2.53vw;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
 
 $transition: 0.3s;
+$font-serif: "Noto Serif TC", serif;
 
 * {
     box-sizing: border-box;
@@ -228,6 +229,12 @@ a {
         width: 27%;
         right: 0;
         bottom: 0;
+    }
+    &-tree {
+        position: absolute;
+        width: 3.02vw;
+        left: 6.56vw;
+        bottom: 1.79vw;
     }
 }
 
