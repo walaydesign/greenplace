@@ -114,7 +114,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            padding: calc(5.51vw + 104px) 8.18vw 0;
+            padding-top: calc(5.51vw + 104px);
             &.innerr {
                 padding: 0 9.49vw;
                 display: flex;
@@ -128,6 +128,13 @@
             }
             &.sakura {
                 background-image: url(../img/sakura-bg.webp);
+                padding-left: 8vw;
+                padding-right: 8vw;
+            }
+            &.hometek {
+                background-image: url(../img/hometek_bg.webp);
+                padding-left: 4.82vw;
+                padding-right: 4.82vw;
             }
         }
         &_title {
@@ -186,9 +193,8 @@
                     width: 10px;
                     height: 10px;
                     background-color: #005EAD;
-                    top: 50%;
+                    top: 18px;
                     left: 0;
-                    transform: translateY(-50%);
                 }
                 &:last-child {
                     margin-bottom: 0;
@@ -212,6 +218,10 @@
                             display: none;
                         }
                     }
+                }
+                .highlight {
+                    font-weight: 700;
+                    display: inline-block;
                 }
             }
         }
@@ -282,6 +292,12 @@
                 width: 33.3333%;
                } 
             }
+            &.hometek {
+                margin-right: 0;
+                .material-inner_row_item {
+                    width: 50%;
+                } 
+            }
         }
     }
     &-innerr {
@@ -295,7 +311,8 @@
             color: rgba(157, 176, 192, 0.25);
             font-family: $font-serif;
             font-size: 40px;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.1em;
+            line-height: 1.1;
         }
         &_title {
             font-size: 45px;
@@ -377,5 +394,83 @@
             width: 4.55vw;
             margin-right: 2.53vw;
         }
+    }
+    &_deco {
+        position: absolute;
+        width: 3.02vw;
+        left: 6.56vw;
+        bottom: 1.79vw;
+    }
+}
+
+.hometek {
+    &_main {
+        display: flex;
+        align-items: center;
+        &_text {
+            width: 40%;
+            padding-right: 3vw;
+        }
+        &_pic {
+            width: 60%;
+        }
+        .material-inner_list {
+            li {
+                display: block;
+                font-weight: normal;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #09A3E0;
+                &:last-child {
+                    border: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    &_logo {
+        width: 20.94vw;
+        margin-bottom: 50px;
+        filter: none;
+    }
+    &_bird {
+        position: absolute;
+        width: 12.19vw;
+        top: 2.46vw;
+        right: 5.24vw;
+    }
+    &-1 {
+        .hometek-inner {
+            &_text {
+                width: 75%;
+            }
+            &_pic {
+                width: 25%;
+            }
+        }
+    }
+    &-2 {
+        .hometek-inner {
+            &_text {
+                width: 60%;
+            }
+            &_pic {
+                width: 40%;
+            }
+        }
+    }
+    &-inner {
+        &_text {
+            padding-right: 3.43vw;
+        }
+        &_logo {
+            width: 14.84vw;
+            margin-right: 1.89vw;
+        }
+    }
+    &_deco {
+        position: absolute;
+        width: 5.23vw;
+        top: 2.06vw;
+        right: 6.1vw;
     }
 }
