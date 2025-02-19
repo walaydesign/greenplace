@@ -970,6 +970,19 @@ a {
   font-size: 28px;
 }
 
+.material-inner_bg.innerr.husky {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .material-inner_bg.sakura {
   background-image: url(../img/sakura-bg.webp);
   padding-left: 8vw;
@@ -980,6 +993,16 @@ a {
   background-image: url(../img/hometek_bg.webp);
   padding-left: 4.82vw;
   padding-right: 4.82vw;
+}
+
+.material-inner_bg.husky {
+  background-image: url(../img/husky-bg.webp);
+  padding-left: 11vw;
+  padding-right: 11vw;
+}
+
+.material-inner_bg.husky .material-innerr_en {
+  margin-bottom: 43px;
 }
 
 .material-inner_title {
@@ -1188,6 +1211,14 @@ a {
   width: 50%;
 }
 
+.material-inner_row.husky {
+  margin-right: 0;
+}
+
+.material-inner_row.husky .material-inner_row_item {
+  width: 100%;
+}
+
 .material-innerr_top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1391,5 +1422,203 @@ a {
   width: 5.23vw;
   top: 2.06vw;
   right: 6.1vw;
+}
+
+.husky_logo {
+  width: 28.03vw;
+  margin-bottom: 2.24vw;
+}
+
+.husky_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.husky_main_text {
+  width: 55%;
+}
+
+.husky_main_pic {
+  width: 45%;
+}
+
+.husky_main .material-innerr_info {
+  margin-bottom: 32px;
+}
+
+.husky_list-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.husky_list-box > ul {
+  width: 50%;
+}
+
+.husky_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -2.5vw;
+  margin-right: -2.5vw;
+  position: relative;
+}
+
+.husky_inner_item {
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-bottom: 45px;
+  width: 33.3333%;
+}
+
+.husky_inner_item.last {
+  width: 66.6667%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.husky_inner_title {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.husky_inner_title > img {
+  width: 70px;
+  margin-right: 18px;
+}
+
+.husky_inner_title > h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  color: #231815;
+  padding-bottom: 15px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.husky_inner_title > h3::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+}
+
+.husky_inner_title > h3.border-lightgreen::after {
+  background-color: #7BA445;
+}
+
+.husky_inner_title > h3.border-bluegreen::after {
+  background-color: #499B87;
+}
+
+.husky_inner_title > h3.border-yellow::after {
+  background-color: #F3B03D;
+}
+
+.husky_inner_title > h3.border-blue::after {
+  background-color: #5A9AC0;
+}
+
+.husky_inner_title > h3.border-orange::after {
+  background-color: #EC7D3B;
+}
+
+.husky_inner_title > h3.border-deepgreen::after {
+  background-color: #448542;
+}
+
+.husky_inner_content {
+  font-size: 23px;
+  margin: 0;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.husky_inner_feat {
+  position: relative;
+  padding: 20px;
+  background-color: #468440;
+  border-radius: 15px;
+  margin-top: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.husky_inner_feat h4 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 13px;
+}
+
+.husky_inner_feat ul > li {
+  color: #fff;
+  padding-left: 20px;
+  position: relative;
+  font-size: 21px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.husky_inner_feat ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.husky_inner_feat ul > li::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+.husky_inner_feat p {
+  color: #468440;
+  font-size: 14px;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: calc(100% + 10px);
+  white-space: nowrap;
+}
+
+.husky_deco {
+  position: absolute;
+  width: 12.19vw;
+  top: -0.5vw;
+  left: 1.6vw;
 }
 /*# sourceMappingURL=style.css.map */

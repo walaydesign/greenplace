@@ -125,6 +125,11 @@
                         font-size: 28px;
                     }
                 }
+                &.husky {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
             }
             &.sakura {
                 background-image: url(../img/sakura-bg.webp);
@@ -135,6 +140,14 @@
                 background-image: url(../img/hometek_bg.webp);
                 padding-left: 4.82vw;
                 padding-right: 4.82vw;
+            }
+            &.husky {
+                background-image: url(../img/husky-bg.webp);
+                padding-left: 11vw;
+                padding-right: 11vw;
+                .material-innerr_en {
+                    margin-bottom: 43px;
+                }
             }
         }
         &_title {
@@ -296,6 +309,12 @@
                 margin-right: 0;
                 .material-inner_row_item {
                     width: 50%;
+                } 
+            }
+            &.husky {
+                margin-right: 0;
+                .material-inner_row_item {
+                    width: 100%;
                 } 
             }
         }
@@ -472,5 +491,175 @@
         width: 5.23vw;
         top: 2.06vw;
         right: 6.1vw;
+    }
+}
+
+.husky {
+    &_logo {
+        width: 28.03vw;
+        margin-bottom: 2.24vw;
+    }
+    &_main {
+        display: flex;
+        align-items: center;
+        &_text {
+            width: 55%;
+        }
+        &_pic {
+            width: 45%;
+        }
+        .material-innerr_info {
+            margin-bottom: 32px;
+        }
+    }
+    &_list {
+        &-box {
+            display: flex;
+            margin-top: 20px;
+            >ul {
+                width: 50%;
+            }
+        }
+    }
+    &_inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -2.5vw;
+        margin-right: -2.5vw;
+        position: relative;
+        &_item {
+            padding-left: 2.5vw;
+            padding-right: 2.5vw;
+            padding-bottom: 45px;
+            width: 33.3333%;
+            &.last {
+                width: 66.6667%;
+                left: 0;
+                bottom: 0;
+                position: absolute;
+            }
+        }
+        &_title {
+            padding: 16px;
+            background-color: #fff;
+            border-radius: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            margin-bottom: 20px;
+            >img {
+                width: 70px;
+                margin-right: 18px;
+            }
+            >h3 {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0;
+                color: #231815;
+                padding-bottom: 15px;
+                position: relative;
+                width: fit-content;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 5px;
+                    left: 0;
+                    bottom: 0;
+                }
+                &.border {
+                    &-lightgreen {
+                        &::after {
+                            background-color: #7BA445;
+                        }
+                    }
+                    &-bluegreen {
+                        &::after {
+                            background-color: #499B87;
+                        }
+                    }
+                    &-yellow {
+                        &::after {
+                            background-color: #F3B03D;
+                        }
+                    }
+                    &-blue {
+                        &::after {
+                            background-color: #5A9AC0;
+                        }
+                    }
+                    &-orange {
+                        &::after {
+                            background-color: #EC7D3B;
+                        }
+                    }
+                    &-deepgreen {
+                        &::after {
+                            background-color: #448542;
+                        }
+                    }
+                }
+            }
+        }
+        &_content {
+            font-size: 23px;
+            margin: 0;
+            letter-spacing: 0.1em;
+            font-weight: 300;
+            text-align: justify;
+        }
+        &_feat {
+            position: relative;
+            padding: 20px;
+            background-color: #468440;
+            border-radius: 15px;
+            margin-top: 20px;
+            width: fit-content;
+            h4 {
+                color: #fff;
+                font-weight: 700;
+                font-size: 23px;
+                margin-bottom: 13px;
+            }
+            ul {
+                >li {
+                    color: #fff;
+                    padding-left: 20px;
+                    position: relative;
+                    font-size: 21px;
+                    font-weight: 300;
+                    margin-bottom: 5px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        background-color: #fff;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%) rotate(45deg);
+                    }
+                }
+            }
+            p {
+                color: #468440;
+                font-size: 14px;
+                margin: 0;
+                position: absolute;
+                top: 10px;
+                left: calc(100% + 10px);
+                white-space: nowrap;
+            }
+        }
+    }
+    &_deco {
+        position: absolute;
+        width: 12.19vw;
+        top: -0.5vw;
+        left: 1.6vw;
     }
 }
