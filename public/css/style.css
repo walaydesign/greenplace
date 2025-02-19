@@ -1011,6 +1011,12 @@ a {
   padding-right: 9vw;
 }
 
+.material-inner_bg.tta {
+  background-image: url(../img/tta-bg.webp);
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 .material-inner_title {
   position: absolute;
   left: 0;
@@ -1700,5 +1706,74 @@ a {
   width: 12.19vw;
   top: 12.34vw;
   right: 1.29vw;
+}
+
+.tta_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.54vw;
+}
+
+.tta_main_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.tta_main_left {
+  width: 90%;
+  padding-right: 1.68vw;
+}
+
+.tta_main_right {
+  width: 10%;
+}
+
+.tta_main_right > img {
+  width: 100%;
+}
+
+.tta_main_table {
+  width: 100%;
+}
+
+.tta_logo {
+  width: 19%;
+}
+
+.tta_list {
+  width: 31%;
+}
+
+.tta_list > div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tta_product {
+  width: 50%;
+}
+
+.tta_title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.tta_bird {
+  position: absolute;
+  width: 10.32vw;
+  top: 4.37vw;
+  right: 4.61vw;
 }
 /*# sourceMappingURL=style.css.map */

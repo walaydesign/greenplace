@@ -154,6 +154,11 @@
                 padding-left: 9vw;
                 padding-right: 9vw;
             }
+            &.tta {
+                background-image: url(../img/tta-bg.webp);
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
         }
         &_title {
             position: absolute;
@@ -729,5 +734,55 @@
         width: 12.19vw;
         top: 12.34vw;
         right: 1.29vw;
+    }
+}
+
+.tta {
+    &_main {
+        display: flex;
+        align-items: center;
+        margin-top: 1.54vw;
+        &_top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        &_left {
+            width: 90%;
+            padding-right: 1.68vw;
+        }
+        &_right {
+            width: 10%;
+            >img {
+                width: 100%;
+            }
+        }
+        &_table {
+            width: 100%;
+        }
+    }
+    &_logo {
+        width: 19%;
+    }
+    &_list {
+        width: 31%;
+        >div {
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+    &_product {
+        width: 50%;
+    }
+    &_title {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    &_bird {
+        position: absolute;
+        width: 10.32vw;
+        top: 4.37vw;
+        right: 4.61vw;
     }
 }
