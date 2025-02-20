@@ -3,6 +3,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    &.bg-dark {
+        background-image: url(../img/bg-dark.webp);
+    }
     &_main {
         width: 80%;
         margin: 0 auto;
@@ -159,6 +162,21 @@
                 padding-left: 5vw;
                 padding-right: 5vw;
             }
+            &.waferlock {
+                background-image: url(../img/waferlock-bg.webp);
+                padding-left: 8vw;
+                padding-right: 8vw;
+                padding-top: calc(4vw + 104px);
+            }
+            &.waferlock-inner {
+                background-image: url(../img/waferlock-bg-2.webp);
+            }
+            &.mercury {
+                background-image: url(../img/mercury-bg.webp);
+                padding-left: 8vw;
+                padding-right: 8vw;
+                padding-top: 3vw;
+            }
         }
         &_title {
             position: absolute;
@@ -205,8 +223,8 @@
                 padding-left: 1.53vw;
                 position: relative;
                 font-size: 30px;
-                font-weight: 500;
-                margin-bottom: 20px;
+                font-weight: 300;
+                margin-bottom: 10px;
                 letter-spacing: 0.2em;
                 display: flex;
                 align-items: center;
@@ -405,6 +423,46 @@
         }
         &_product {
             width: 100%;
+        }
+    }
+    &-info {
+        padding: 20px 37px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        li {
+            font-size: 30px;
+            font-weight: 500;
+            padding-right: 40px;
+            position: relative;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            color: #fff;
+            letter-spacing: 0.05em;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 24px;
+                background-color: #fff;
+                top: 50%;
+                right: 18px;
+                transform: translateY(-50%);
+            }
+            &:last-child {
+                padding-right: 0;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        &.toleft {
+            padding-right: 110px;
+            background: linear-gradient(to left, transparent 0%, #F29700 100%);
+        }
+        &.toright {
+            padding-left: 110px;
+            background: linear-gradient(to right, transparent 0%, #F29700 100%);
         }
     }
 }
@@ -784,5 +842,143 @@
         width: 10.32vw;
         top: 4.37vw;
         right: 4.61vw;
+    }
+}
+
+.waferlock {
+    &_main {
+        display: flex;
+        align-items: center;
+        &_text {
+            width: 70%;
+            &_head {
+                position: relative;
+                width: fit-content;
+                margin-bottom: 50px;
+            }
+        }
+        &_pic {
+            width: 30%;
+        }
+        &_bird {
+            position: absolute;
+            width: 12.19vw;
+            bottom: 1%;
+            left: 95%;
+        }
+    }
+    &_logo {
+        width: 26.35vw;
+        margin-bottom: 30px;
+    }
+    &_inner {
+        display: flex;
+        align-items: center;
+        margin: 28px 0;
+        &_pic {
+            width: 32%;
+            >img {
+                width: 100%;
+            }
+        }
+        &_text {
+            width: 68%;
+            &_title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+            h2 {
+                font-family: $font-serif;
+                color: rgba(157, 0, 0, 0.19);
+                margin: 0 0 0 25px;
+                font-size: 23px;
+                font-weight: 700;
+            }
+            .material-inner_list {
+                padding-left: 110px;
+            }
+        }
+    }
+    &-inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-title {
+        position: absolute;
+        width: 26.56vw;
+        top: 0.1vw;
+        right: 0;
+    }
+    &-bird {
+        position: absolute;
+        width: 12.19vw;
+        top: 25.94vw;
+        right: 8.96vw;
+    }
+}
+
+.mercury {
+    &_main {
+        display: flex;
+        align-items: center;
+        &_pic {
+            width: 30%;
+            >img {
+                width: 100%;
+            }
+        }
+        &_text {
+            width: 70%;
+            padding-left: 9%;
+        }
+        &_title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            &_about {
+                display: flex;
+                align-items: center;
+                padding: 10px 135px 10px 25px;
+                background: linear-gradient(to right, #F29700 0%, transparent 100%);
+                position: relative;
+                width: fit-content;
+                border-radius: 100px;
+                margin-right: 10px;
+                h1 {
+                    font-size: 29px;
+                    color: #fff;
+                    font-weight: 700;
+                    margin: 0;
+                    font-family: $font-serif;
+                }
+            }
+            &_triangle {
+                width: 6px;
+                margin-right: 8px;
+            }
+            &_bird {
+                position: absolute;
+                width: 9.71vw;
+                bottom: -30%;
+                left: 70%;
+            }
+        }
+        &_content {
+            p {
+                font-size: 30px;
+                font-weight: 300;
+                margin-bottom: 25px;
+                padding-bottom: 25px;
+                border-bottom: 1px solid #9D0000;
+                text-align: justify;
+                line-height: 1.7;
+                &:last-child {
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    border: 0;
+                }
+            }
+        }
     }
 }
