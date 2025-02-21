@@ -83,6 +83,16 @@ a {
   text-shadow: none;
 }
 
+.nav_list > li.active .nav_list_item:not(.haschild) > a > span {
+  padding-left: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #0069A9;
+}
+
+.nav_list > li.active .nav_list_item:not(.haschild) > a > span::before {
+  opacity: 1;
+}
+
 .nav_list > li.active .nav_list_item.haschild > a {
   padding-left: 25px;
   padding-bottom: 5px;
@@ -160,6 +170,27 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   letter-spacing: 0.2em;
+}
+
+.nav_list_item > a > span {
+  position: relative;
+  display: block;
+}
+
+.nav_list_item > a > span::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 6px;
+  background-image: url(../img/triangle-2.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
 }
 
 .nav_list_item:not(.haschild) > a {
@@ -2044,5 +2075,229 @@ a {
   padding-bottom: 0;
   margin-bottom: 0;
   border: 0;
+}
+
+.life {
+  background-image: url(../img/bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.life_main {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.life_btn {
+  width: 20%;
+}
+
+.life_btn_item {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: linear-gradient(167deg, rgba(156, 197, 79, 0.9) 0%, transparent 100%);
+  border: 0;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+.life_btn_item h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+}
+
+.life_btn_item p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #429955;
+  margin-bottom: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.life_btn_item.active {
+  background: linear-gradient(167deg, rgba(228, 127, 0, 0.9) 0%, transparent 100%);
+}
+
+.life_btn_item.active p {
+  color: #ED6A00;
+}
+
+.life_btn_item.active .life_btn_border {
+  opacity: 0;
+}
+
+.life_btn_item.active .life_btn_arrow {
+  opacity: 1;
+}
+
+.life_btn_border {
+  width: 50px;
+  height: 4px;
+  background-color: #93B52B;
+  margin: 0 auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.life_btn_arrow {
+  width: 33px;
+  display: block;
+  margin: 0 auto;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.life_btn h3 {
+  font-size: 27px;
+  font-weight: 300;
+  margin: 0;
+  color: #ABA7A7;
+  margin-top: 25px;
+}
+
+.life_map {
+  width: 80%;
+  position: relative;
+}
+
+.life_map > img {
+  width: 100%;
+}
+
+.life_map_item {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.life_map_item_main {
+  width: 100%;
+}
+
+.life_map_pin {
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.life_map_pin:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.life_map_traffic-1 {
+  width: 7.19%;
+  top: 32.5%;
+  right: 31.81%;
+}
+
+.life_map_traffic-2 {
+  width: 1.15%;
+  top: 37.56%;
+  right: 49.61%;
+}
+
+.life_map_traffic-3 {
+  width: 1.5%;
+  top: 54.7%;
+  right: 85.1%;
+}
+
+.life_map_life-1 {
+  width: 5.4%;
+  top: 35%;
+  right: 23.6%;
+}
+
+.life_map_life-2 {
+  width: 4.1%;
+  top: 23.85%;
+  right: 13.4%;
+}
+
+.life_map_life-3 {
+  width: 7.1%;
+  top: 25.3%;
+  right: 89.4%;
+}
+
+.life_map_life-4 {
+  width: 6.2%;
+  top: 24.9%;
+  right: 73.8%;
+}
+
+.life_map_life-5 {
+  width: 1.3%;
+  top: 24.8%;
+  right: 24.43%;
+}
+
+.life_map_life-6 {
+  width: 1.3%;
+  top: 21.9%;
+  right: 25.81%;
+}
+
+.life_map_school-1 {
+  width: 6.6%;
+  top: 73.3%;
+  right: 28%;
+}
+
+.life_map_leisure-1 {
+  width: 6.6%;
+  top: 7.79%;
+  right: 74.26%;
+}
+
+.life_map_leisure-2 {
+  width: 3.9%;
+  top: 58.4%;
+  right: 4.1%;
+}
+
+.life-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.life-popup_inner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.life-popup_inner > img {
+  width: 60%;
 }
 /*# sourceMappingURL=style.css.map */

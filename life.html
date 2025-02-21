@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <title>龍騰綠境</title>
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <div class="container life">
+        <div class="page">
+            <nav class="nav">
+                <img class="nav_logo" src="./public/img/logo.webp" alt="">
+                <ul class="nav_list">
+                    <li>
+                        <div class="nav_list_item haschild">
+                            <a>龍騰團隊</a>
+                            <ul class="nav_list_second">
+                                <li><a href="./group.html">關於龍騰</a></li>
+                                <li><a href="./performance.html">歷年業績</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <div class="nav_list_item">
+                            <a href="./life.html"><span>人文生活</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_list_item">
+                            <a href=""><span>建築規劃</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav_list_item haschild">
+                            <a>精品工藝</a>
+                            <ul class="nav_list_second">
+                                <li><a class="active">名品建材</a></li>
+                                <li><a href="">工學規劃</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main life_main">
+                <div class="life_btn">
+                    <button class="life_btn_item" data-target="#life-traffic">
+                        <h2>交通</h2>
+                        <p>Transportation</p>
+                        <div class="life_btn_border"></div>
+                        <img class="life_btn_arrow" src="./public/img/live-arrow.svg" alt="">
+                    </button>
+                    <button class="life_btn_item" data-target="#life-life">
+                        <h2>生活</h2>
+                        <p>Life Function</p>
+                        <div class="life_btn_border"></div>
+                        <img class="life_btn_arrow" src="./public/img/live-arrow.svg" alt="">
+                    </button>
+                    <button class="life_btn_item" data-target="#life-school">
+                        <h2>學區</h2>
+                        <p>School</p>
+                        <div class="life_btn_border"></div>
+                        <img class="life_btn_arrow" src="./public/img/live-arrow.svg" alt="">
+                    </button>
+                    <button class="life_btn_item" data-target="#life-leisure">
+                        <h2>休閒</h2>
+                        <p>Leisure Place</p>
+                        <div class="life_btn_border"></div>
+                        <img class="life_btn_arrow" src="./public/img/live-arrow.svg" alt="">
+                    </button>
+                    <h3>
+                        HUMANISTIC<br>
+                        LIFE
+                    </h3>
+                </div>
+                <div class="life_map">
+                    <img src="./public/img/live-default.webp" alt="">
+                    <div class="life_map_item" id="life-traffic">
+                        <img class="life_map_item_main" src="./public/img/live-traffic.webp" alt="">
+                        <img class="life_map_traffic-1 life_map_pin" data-popup="#life-popup-traffic-1" src="./public/img/live-traffic-1.webp" alt="">
+                        <img class="life_map_traffic-2 life_map_pin" data-popup="#life-popup-traffic-2" src="./public/img/live-traffic-2.webp" alt="">
+                        <img class="life_map_traffic-3 life_map_pin" data-popup="#life-popup-traffic-3" src="./public/img/live-traffic-3.webp" alt="">
+                    </div>
+                    <div class="life_map_item" id="life-life">
+                        <img class="life_map_item_main" src="./public/img/live-life.webp" alt="">
+                        <img class="life_map_life-1 life_map_pin" data-popup="#life-popup-life-1" src="./public/img/live-life-1.webp" alt="">
+                        <img class="life_map_life-2 life_map_pin" data-popup="#life-popup-life-2" src="./public/img/live-life-2.webp" alt="">
+                        <img class="life_map_life-3 life_map_pin" data-popup="#life-popup-life-3" src="./public/img/live-life-3.webp" alt="">
+                        <img class="life_map_life-4 life_map_pin" data-popup="#life-popup-life-4" src="./public/img/live-life-4.webp" alt="">
+                        <img class="life_map_life-5 life_map_pin" data-popup="#life-popup-life-5" src="./public/img/live-life-5.webp" alt="">
+                        <img class="life_map_life-6 life_map_pin" data-popup="#life-popup-life-6" src="./public/img/live-life-6.webp" alt="">
+                    </div>
+                    <div class="life_map_item" id="life-school" style="display: block;">
+                        <img class="life_map_item_main" src="./public/img/live-school.webp" alt="">
+                        <img class="life_map_school-1 life_map_pin" data-popup="#life-popup-school-1" src="./public/img/live-school-1.webp" alt="">
+                    </div>
+                    <div class="life_map_item" id="life-leisure" style="display: block;">
+                        <img class="life_map_item_main" src="./public/img/live-leisure.webp" alt="">
+                        <img class="life_map_leisure-1 life_map_pin" data-popup="#life-popup-leisure-1" src="./public/img/live-leisure-1.webp" alt="">
+                        <img class="life_map_leisure-2 life_map_pin" data-popup="#life-popup-leisure-2" src="./public/img/live-leisure-2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="deco-1" src="./public/img/deco-1.webp" alt="">
+        <img class="deco-2" src="./public/img/deco-2.webp" alt="">
+    </div>
+
+    <div class="life-popup" id="life-popup-traffic-1">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-traffic-pic-1.png" alt="">
+        </div>
+    </div>
+
+    <div class="life-popup" id="life-popup-traffic-2">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-traffic-pic-2.png" alt="">
+        </div>
+    </div>
+
+    <div class="life-popup" id="life-popup-traffic-3">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-traffic-pic-3.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="life-popup" id="life-popup-life-1">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-life-pic-1.png" alt="">
+        </div>
+    </div>
+
+    <div class="life-popup" id="life-popup-life-2">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-life-pic-2.png" alt="">
+        </div>
+    </div>
+
+    <div class="life-popup" id="life-popup-life-3">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-life-pic-3.png" alt="">
+        </div>
+    </div>
+
+    <div class="life-popup" id="life-popup-life-4">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-life-pic-4.png" alt="">
+        </div>
+    </div>
+
+    <div class="life-popup" id="life-popup-life-5">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-life-pic-5.png" alt="">
+        </div>
+    </div>
+
+    <div class="life-popup" id="life-popup-life-6">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-life-pic-6.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="life-popup" id="life-popup-school-1">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-school-pic-1.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="life-popup" id="life-popup-leisure-1">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-leisure-pic-1.png" alt="">
+        </div>
+    </div>
+
+    <div class="life-popup" id="life-popup-leisure-2">
+        <div class="life-popup_inner">
+            <img src="./public/img/live-leisure-pic-2.png" alt="">
+        </div>
+    </div>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/common.js"></script>
+    <script>
+        $(".life-popup").click(function() {
+            $(this).fadeOut(300);
+        })
+
+        $(".life_map_pin").click(function() {
+            let popup = $(this).data("popup");
+            $(popup).fadeIn(300);
+        })
+
+        $(".life_btn_item").click(function() {
+            let target = $(this).data("target");
+            $(".life_map_item").hide();
+            $(target).show();
+            $(".life_btn_item").removeClass("active");
+            $(this).addClass("active");
+        })
+    </script>
+</body>
+</html>

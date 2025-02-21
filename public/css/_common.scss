@@ -74,6 +74,18 @@ a {
                         color: #0069A9;
                         text-shadow: none;
                     }
+                    &:not(.haschild) {
+                        >a {
+                            >span {
+                                padding-left: 25px;
+                                padding-bottom: 5px;
+                                border-bottom: 1px solid #0069A9;
+                                &::before {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
                     &.haschild {
                         >a {
                             padding-left: 25px;
@@ -138,6 +150,24 @@ a {
                 position: relative;
                 transition: $transition;
                 letter-spacing: 0.2em;
+                >span {
+                    position: relative;
+                    display: block;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 12px;
+                        height: 6px;
+                        background-image: url(../img/triangle-2.svg);
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        opacity: 0;
+                    }
+                }
             }
             &:not(.haschild) {
                 >a {
