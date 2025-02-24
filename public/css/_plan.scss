@@ -38,7 +38,6 @@
             }
             &.architecture-mode {
                 overflow: hidden;
-                // display: none;
                 >img {
                     position: absolute;
                     width: 100%;
@@ -303,6 +302,73 @@
                     width: 21.49%;
                     top: 56.8%;
                     left: 56%;
+                }
+            }
+        }
+        &-floor {
+            .compass {
+                position: absolute;
+                width: 4.88vw;
+                top: 4.79vw;
+                left: 15.85vw;
+            }
+            .map {
+                position: absolute;
+                width: 245px;
+                top: 16.73vw;
+                right: 10.44vw;
+                &_room {
+                    cursor: pointer;
+                    path, polygon {
+                        transition: $transition;
+                    }
+                    &:hover, &.active {
+                        .map {
+                            &_fill {
+                                fill: #206FB2;
+                            }
+                            &_text {
+                                path {
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .floor-pic {
+                &_item {
+                    position: absolute;
+                    width: 48vw;
+                    top: 7vw;
+                    left: 15vw;
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
+                    &#floor-pic {
+                        &-a1 {
+                            top: 0;
+                        }
+                        &-a2 {
+                            top: 4.5vw;
+                        }
+                        &-a5 {
+                            top: 4.5vw;
+                        }
+                        &-a8 {
+                            top: 5vw;
+                        }
+                        &-b2 {
+                            top: 5vw;
+                        }
+                        &-b6 {
+                            top: 9vw;
+                        }
+                        &-b8 {
+                            top: 5vw;
+                        }
+                    }
                 }
             }
         }

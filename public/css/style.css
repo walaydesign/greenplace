@@ -2647,6 +2647,77 @@ a {
   left: 56%;
 }
 
+.plan_inner-floor .compass {
+  position: absolute;
+  width: 4.88vw;
+  top: 4.79vw;
+  left: 15.85vw;
+}
+
+.plan_inner-floor .map {
+  position: absolute;
+  width: 245px;
+  top: 16.73vw;
+  right: 10.44vw;
+}
+
+.plan_inner-floor .map_room {
+  cursor: pointer;
+}
+
+.plan_inner-floor .map_room path, .plan_inner-floor .map_room polygon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.plan_inner-floor .map_room:hover .map_fill, .plan_inner-floor .map_room.active .map_fill {
+  fill: #206FB2;
+}
+
+.plan_inner-floor .map_room:hover .map_text path, .plan_inner-floor .map_room.active .map_text path {
+  fill: #fff;
+}
+
+.plan_inner-floor .floor-pic_item {
+  position: absolute;
+  width: 48vw;
+  top: 7vw;
+  left: 15vw;
+  display: none;
+}
+
+.plan_inner-floor .floor-pic_item.active {
+  display: block;
+}
+
+.plan_inner-floor .floor-pic_item#floor-pic-a1 {
+  top: 0;
+}
+
+.plan_inner-floor .floor-pic_item#floor-pic-a2 {
+  top: 4.5vw;
+}
+
+.plan_inner-floor .floor-pic_item#floor-pic-a5 {
+  top: 4.5vw;
+}
+
+.plan_inner-floor .floor-pic_item#floor-pic-a8 {
+  top: 5vw;
+}
+
+.plan_inner-floor .floor-pic_item#floor-pic-b2 {
+  top: 5vw;
+}
+
+.plan_inner-floor .floor-pic_item#floor-pic-b6 {
+  top: 9vw;
+}
+
+.plan_inner-floor .floor-pic_item#floor-pic-b8 {
+  top: 5vw;
+}
+
 .plan_space_nav {
   padding-left: 23px;
   margin-bottom: 35px;

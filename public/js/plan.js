@@ -44,3 +44,26 @@ $(".plan_space_nav li").click(function() {
     $(".plan_inner").hide();
     $(target).show();
 })
+
+$(".map_room").click(function() {
+    let room = $(this).attr("id");
+    $(".map_room").removeClass("active");
+    $(this).addClass("active");
+    let roomTarget = "#floor-pic-" + room;
+    $(roomTarget).addClass("active").siblings(".floor-pic_item").removeClass("active");
+})
+
+$(".map-item").click(function() {
+    $(this).parents(".plan_inner-spacestandard").hide();
+    $(".plan_nav_item").removeClass("active");
+    $(".plan_space_nav").slideUp(300);
+    $(".plan_nav-floor").addClass("active");
+    $(".plan_inner-floor").show();
+    let room = $(this).data("room");
+    let roomFloor = "#" + room;
+    console.log("room=" + room);
+    $(".map_room").removeClass("active");
+    $(".plan_inner-floor .map_room" + roomFloor).addClass("active");
+    let roomTarget = "#floor-pic-" + room;
+    $(roomTarget).addClass("active").siblings(".floor-pic_item").removeClass("active");
+})
