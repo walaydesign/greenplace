@@ -2655,6 +2655,13 @@ a {
   left: 15.85vw;
 }
 
+.plan_inner-floor .bird {
+  position: absolute;
+  width: 9.45vw;
+  top: 5.85vw;
+  right: 0;
+}
+
 .plan_inner-floor .map {
   position: absolute;
   width: 245px;
