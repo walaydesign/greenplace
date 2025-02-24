@@ -10,6 +10,7 @@ $(".plan_nav_item.architecture-mode").click(function() {
 
 $(".plan_nav_item").click(function() {
     $(".plan_nav_item").removeClass("active");
+    $(".plan_space_nav li").removeClass("active");
     $(this).addClass("active");
     if($(this).hasClass("plan_nav-architecture")) {
         $(".architecture-mode").fadeIn(300);
@@ -61,7 +62,6 @@ $(".map-item").click(function() {
     $(".plan_inner-floor").show();
     let room = $(this).data("room");
     let roomFloor = "#" + room;
-    console.log("room=" + room);
     $(".map_room").removeClass("active");
     $(".plan_inner-floor .map_room" + roomFloor).addClass("active");
     let roomTarget = "#floor-pic-" + room;

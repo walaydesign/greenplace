@@ -2543,6 +2543,7 @@ a {
   position: absolute;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .plan_inner-spacestandard .map-item:hover {
