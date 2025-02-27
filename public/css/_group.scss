@@ -96,6 +96,10 @@
 }
 
 .performance {
+    background-image: url(../img/performance-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     &_main {
         width: 80%;
         margin: 0 auto;

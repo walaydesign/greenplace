@@ -17,3 +17,7 @@ function nav() {
         }
     })
 }
+
+$(".btn-back").click(function() {
+    history.back();
+})

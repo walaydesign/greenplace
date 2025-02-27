@@ -159,8 +159,8 @@
             }
             &.tta {
                 background-image: url(../img/tta-bg.webp);
-                padding-left: 5vw;
-                padding-right: 5vw;
+                padding-left: 7vw;
+                padding-right: 7vw;
             }
             &.waferlock {
                 background-image: url(../img/waferlock-bg.webp);
@@ -293,9 +293,9 @@
                         margin: 0 auto;
                         font-weight: 300;
                         color: #005EAD;
-                        font-size: 34px;
+                        font-size: 32px;
                         position: relative;
-                        letter-spacing: 0.15em;
+                        letter-spacing: 0.1em;
                         transition: $transition;
                         &::before {
                             position: absolute;
@@ -580,6 +580,7 @@
     &_main {
         display: flex;
         align-items: center;
+        padding-top: 5vw;
         &_text {
             width: 55%;
         }
@@ -615,6 +616,11 @@
                 left: 0;
                 bottom: 0;
                 position: absolute;
+                padding-bottom: 0;
+                transform: translateY(-47px);
+            }
+            &.anion {
+                padding-bottom: 0;
             }
         }
         &_title {

@@ -42,6 +42,9 @@ a {
         width: 70%;
         margin: 0 auto 3.2vw;
         display: block;
+        >img {
+            width: 100%;
+        }
     }
     &_list {
         >li {
@@ -301,5 +304,17 @@ a {
         margin: 0;
         font-weight: 300;
         letter-spacing: 0.03em;
+    }
+}
+
+.btn-back {
+    position: absolute;
+    width: 70px;
+    right: 2vw;
+    bottom: 2vw;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        transform: scale(1.2);
     }
 }

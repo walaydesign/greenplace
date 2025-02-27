@@ -20,6 +20,8 @@
             border: 0;
             margin-bottom: 22px;
             padding: 0;
+            cursor: pointer;
+            transition: $transition;
             h2 {
                 font-size: 35px;
                 text-align: center;
@@ -34,7 +36,7 @@
                 margin-bottom: 15px;
                 transition: $transition;
             }
-            &.active {
+            &.active, &:hover {
                 background: linear-gradient(167deg, rgba(228, 127, 0, 0.9) 0%, transparent 100%);
                 p {
                     color: #ED6A00;
@@ -48,6 +50,9 @@
                     }
                 }
             }
+            // &:hover {
+            //     transform: scale(1.1);
+            // }
         }
         &_border {
             width: 50px;
@@ -91,6 +96,7 @@
         &_pin {
             position: absolute;
             transition: $transition;
+            cursor: pointer;
             &:hover {
                 transform: scale(1.3);
             }
