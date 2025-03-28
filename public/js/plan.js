@@ -12,6 +12,7 @@ $(".plan_nav_item").click(function() {
     $(".plan_nav_item").removeClass("active");
     $(".plan_space_nav li").removeClass("active");
     $(this).addClass("active");
+
     if($(this).hasClass("plan_nav-architecture")) {
         $(".architecture-mode").fadeIn(300);
     }
@@ -30,8 +31,8 @@ $(".plan_nav_item").click(function() {
 
     if(!$(this).hasClass("plan_nav-space")) {
         let target = $(this).data("target");
-        $(".plan_inner").hide();
-        $(target).show();
+        $(".plan_inner").fadeOut(300);
+        $(target).fadeIn(300);
     }
 
     if($(this).hasClass("architecture-mode")) {
@@ -42,8 +43,8 @@ $(".plan_nav_item").click(function() {
 $(".plan_space_nav li").click(function() {
     $(this).addClass("active").siblings("li").removeClass("active");
     let target = $(this).data("target");
-    $(".plan_inner").hide();
-    $(target).show();
+    $(".plan_inner").fadeOut(300);
+    $(target).fadeIn(300);
 })
 
 $(".map_room").click(function() {
@@ -66,4 +67,10 @@ $(".map-item").click(function() {
     $(".plan_inner-floor .map_room" + roomFloor).addClass("active");
     let roomTarget = "#floor-pic-" + room;
     $(roomTarget).addClass("active").siblings(".floor-pic_item").removeClass("active");
+})
+
+$(".pic-3d_tab button").click(function() {
+    let target = $(this).data("target");
+    $(target).addClass("active").siblings(".pic-3d_pic_item").removeClass("active");
+    $(this).addClass("active").parents("li").siblings("li").find("button").removeClass("active");
 })

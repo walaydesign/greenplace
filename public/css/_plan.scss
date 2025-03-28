@@ -91,6 +91,12 @@
         &.active {
             display: block;
         }
+        .bird {
+            position: absolute;
+            width: 9.45vw;
+            top: 5.85vw;
+            right: 0;
+        }
         &-architecture {
             position: relative;
             >div {
@@ -374,6 +380,133 @@
                         }
                         &-b8 {
                             top: 5vw;
+                        }
+                    }
+                }
+            }
+        }
+        &-realpic {
+            .realpic {
+                &_main {
+                    position: absolute;
+                    width: 57.05vw;
+                    top: 5.68vw;
+                    left: 20.26vw;
+                }
+                &_btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.82vw;
+                    margin-bottom: 3.11vw;
+                    a {
+                        width: 143px;
+                        height: 143px;
+                        border-radius: 50%;
+                        background-color: rgba(255,255,255,0.7);
+                        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        color: #E96600;
+                        font-size: 29px;
+                        font-weight: 700;
+                        text-align: center;
+                        >span {
+                            line-height: 1.3;
+                        }
+                        .num {
+                            font-size: 37px;
+                        }
+                        img {
+                            width: 35%;    
+                        }
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 110%;
+                            height: 110%;
+                            border: 2px solid rgba(255,255,255,0.7);
+                            border-radius: 50%;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+                        }
+                    }
+                }
+                &_pic {
+                    width: 100%;
+                }
+            }
+        }
+        &-pic-3d {
+            .pic-3d {
+                &_main {
+                    width: 100%;
+                    height: 100%;
+                }
+                &_tab {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
+                    left: 4.29vw;
+                    bottom: 4.76vw;
+                    button {
+                        width: 140px;
+                        height: 50px;
+                        border-radius: 100px;
+                        border: 2px solid rgba(255,255,255,0.57);
+                        font-size: 17px;
+                        color: #fff;
+                        text-shadow: 0 0 3px rgba(0,0,0,0.75);
+                        box-shadow: 0 0 10px rgba(0,0,0,0.35);
+                        font-size: 17px;
+                        background-color: transparent;
+                        text-align: center;
+                        line-height: 1;
+                        transition: $transition;
+                        &.active {
+                            background-color: rgba(255,255,255,0.57);
+                            color: #231815;
+                            text-shadow: none;
+                        }
+                        small {
+                            font-size: 10px;
+                        }
+                    }
+                }
+                &_pic {
+                    width: 100%;
+                    height: 100%;
+                    &_item {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        display: none;
+                        >img {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            top: 0;
+                            left: 0;
+                        }
+                        >p {
+                            position: absolute;
+                            font-size: 22px;
+                            font-weight: 500;
+                            margin: 0;
+                            top: 28px;
+                            right: 30px;
+                            color: #fff;
+                            letter-spacing: 0.1em;
+                            text-shadow: 0 0 3px rgba(0,0,0,0.75);
+                        }
+                        &.active {
+                            display: block;
                         }
                     }
                 }

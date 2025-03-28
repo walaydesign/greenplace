@@ -47,6 +47,8 @@
                 </ul>
             </nav>
             <div class="main plan_main">
+
+                <!-- 外觀建築 -->
                 <div class="plan_inner plan_inner-architecture mode-light active" id="architecture">
                     <div class="architecture_light">
                         <img src="./public/img/architecture-light.webp" alt="">
@@ -56,6 +58,9 @@
                     </div>
                     <p>3D示意圖</p>
                 </div>
+                 <!-- 外觀建築 end -->
+
+                <!-- 空間規劃-全區平面圖 -->
                 <div class="plan_inner plan_inner-spaceall" id="space-all">
                     <img class="compass" src="./public/img/compass.webp" alt="">
                     <div class="plan_inner-spacetitle">
@@ -63,8 +68,71 @@
                         <p>本圖僅供參考，實際依買賣契約書為準。</p>
                     </div>
                     <img class="bird" src="./public/img/bird-4.webp" alt="" data-aos="fade-left" data-aos-duration="800">
-                    <img class="map" src="./public/img/space-mapall.webp" alt="">
+                    <img class="map" src="./public/img/space-mapall.png" alt="">
                 </div>
+                <!-- 空間規劃-全區平面圖 end -->
+
+                <!-- 空間規劃-基地實景圖 -->
+                <div class="plan_inner plan_inner-realpic" id="real-pic">
+                    <div class="plan_inner-spacetitle">
+                        <h2>基地實景圖</h2>
+                        <p>本圖僅供參考，實際依買賣契約書為準。</p>
+                    </div>
+                    <img class="bird" src="./public/img/bird-4.webp" alt="" data-aos="fade-left" data-aos-duration="800">
+
+                    <div class="realpic_main">
+                        <div class="realpic_btn">
+                            <a href=""><img src="./public/img/yt.svg" alt=""></a>
+                            <a href="https://kuula.co/post/n1/collection/7bLnB" target="_blank">
+                                <span><span class="num">360</span><br>環景</span>
+                            </a>
+                        </div>
+                        <img class="realpic_pic" src="./public/img/realpic.webp" alt="">
+
+                    </div>
+                </div>
+                <!-- 空間規劃-基地實景圖 end -->
+
+                <!-- 空間規劃-3D公設圖 -->
+                <div class="plan_inner plan_inner-pic-3d" id="pic-3d">
+
+                    <div class="pic-3d_main">
+                        <div class="pic-3d_pic">
+                            <div class="pic-3d_pic_item active" id="pic-3d_hall">
+                                <img src="./public/img/3d-1.webp" alt="">
+                                <p>3D示意圖</p>
+                            </div>
+                            <div class="pic-3d_pic_item" id="pic-3d_computer">
+                                <img src="./public/img/3d-2.webp" alt="">
+                                <p>3D示意圖</p>
+                            </div>
+                            <div class="pic-3d_pic_item" id="pic-3d_community">
+                                <img src="./public/img/3d-3.webp" alt="">
+                                <p>3D示意圖</p>
+                            </div>
+                            <div class="pic-3d_pic_item" id="pic-3d_gym">
+                                <img src="./public/img/3d-4.webp" alt="">
+                                <p>3D示意圖</p>
+                            </div>
+                            <div class="pic-3d_pic_item" id="pic-3d_toilet">
+                                <img src="./public/img/3d-5.webp" alt="">
+                                <p>3D示意圖</p>
+                            </div>
+                        </div>
+                        <ul class="pic-3d_tab">
+                            <li><button class="active" data-target="#pic-3d_hall">迎賓大廳</button></li>
+                            <li><button data-target="#pic-3d_computer">電腦區&閱讀區</button></li>
+                            <li><button data-target="#pic-3d_community">交誼廳&會議室</button></li>
+                            <li><button data-target="#pic-3d_gym">健身房</button></li>
+                            <li><button data-target="#pic-3d_toilet">無障礙廁所<br><small>共用洗手台、男廁、女廁</small></button></li>
+                        </ul>
+                    </div>
+                    <img class="bird" src="./public/img/bird-4.webp" alt="" data-aos="fade-left" data-aos-duration="800">
+                </div>
+                <!-- 空間規劃-3D公設圖 end -->
+
+
+                <!-- 空間規劃-標準層 -->
                 <div class="plan_inner plan_inner-spacestandard" id="space-standard">
                     <img class="compass" src="./public/img/compass.webp" alt="">
                     <div class="plan_inner-spacetitle">
@@ -91,6 +159,11 @@
                         <img class="map-a3 map-item" data-room="a3" src="./public/img/a3.png" alt="">
                     </div>
                 </div>
+                <!-- 空間規劃-標準層 end -->
+
+
+
+                <!-- 家配圖 -->
                 <div class="plan_inner plan_inner-floor" id="floor">
                     <img class="compass" src="./public/img/compass.webp" alt="">
                     <div class="plan_inner-spacetitle">
@@ -259,6 +332,9 @@
                         <img class="floor-pic_item" id="floor-pic-b9" src="./public/img/floor-B9.png" alt="">
                     </div>
                 </div>
+                <!-- 家配圖 end -->
+
+
                 <div class="plan_nav">
                     <div class="plan_nav_item plan_nav-architecture active" data-target="#architecture" data-aos="zoom-in" data-aos-duration="800">
                         <h2 class="plan_nav_ch">外觀<br>建築</h2>
@@ -271,8 +347,8 @@
                     <ul class="plan_space_nav" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                         <li data-target="#space-all">全區平面圖</li>
                         <li data-target="#space-standard">標準層</li>
-                        <li>基地實景圖</li>
-                        <li>3D公設圖</li>
+                        <li data-target="#real-pic">基地實景圖</li>
+                        <li data-target="#pic-3d">3D公設圖</li>
                     </ul>
                     <div class="plan_nav_item plan_nav-floor" data-target="#floor" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
                         <h2 class="plan_nav_ch">家配圖</h2>
