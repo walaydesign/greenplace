@@ -308,6 +308,7 @@
         }
     }
     &_roof {
+        background-image: url(../img/waterproof-bg.webp);
         &_text {
             width: 35%;
             .waterproof_list {
@@ -337,6 +338,7 @@
         }
     }
     &_wall {
+        background-image: url(../img/waterproof-bg.webp);
         &_text {
             width: 47%;
         }
@@ -352,6 +354,7 @@
         }
     }
     &_bathroom {
+        background-image: url(../img/waterproof-bg.webp);
         &_text {
             width: 50%;
         }
@@ -367,7 +370,7 @@
         }
     }
     &_exhaust {
-        background-image: url(../img/waterproof-bg.webp);
+        background-image: url(../img/waterproof-bg-2.webp);
         &_text {
             width: 49%;
             padding-right: 90px;
@@ -392,7 +395,7 @@
         }
     }
     &_pipe {
-        background-image: url(../img/waterproof-bg.webp);
+        background-image: url(../img/waterproof-bg-2.webp);
         &_text {
             width: 49%;
             padding-right: 130px;

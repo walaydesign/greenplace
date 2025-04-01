@@ -3479,6 +3479,10 @@ button {
   color: #fff;
 }
 
+.waterproof_roof {
+  background-image: url(../img/waterproof-bg.webp);
+}
+
 .waterproof_roof_text {
   width: 35%;
 }
@@ -3504,6 +3508,10 @@ button {
   right: 22.65vw;
 }
 
+.waterproof_wall {
+  background-image: url(../img/waterproof-bg.webp);
+}
+
 .waterproof_wall_text {
   width: 47%;
 }
@@ -3519,6 +3527,10 @@ button {
 .waterproof_wall_bird {
   bottom: 2.41vw;
   right: 22.65vw;
+}
+
+.waterproof_bathroom {
+  background-image: url(../img/waterproof-bg.webp);
 }
 
 .waterproof_bathroom_text {
@@ -3539,7 +3551,7 @@ button {
 }
 
 .waterproof_exhaust {
-  background-image: url(../img/waterproof-bg.webp);
+  background-image: url(../img/waterproof-bg-2.webp);
 }
 
 .waterproof_exhaust_text {
@@ -3569,7 +3581,7 @@ button {
 }
 
 .waterproof_pipe {
-  background-image: url(../img/waterproof-bg.webp);
+  background-image: url(../img/waterproof-bg-2.webp);
 }
 
 .waterproof_pipe_text {
