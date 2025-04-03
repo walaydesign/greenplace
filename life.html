@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
     <title>龍騰綠境</title>
     <link rel="stylesheet" href="./public/css/aos/aos.css">
-    <link rel="stylesheet" href="./public/css/style.css?v=1">
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/css/style.css?v=2">
 </head>
 <body>
     <div class="container life">
@@ -112,86 +113,107 @@
 
     <div class="life-popup" id="life-popup-traffic-1">
         <div class="life-popup_inner">
-            <img src="./public/img/live-traffic-pic-1.png" alt="">
+            <img class="popup-img" src="./public/img/live-traffic-pic-1.png" alt="">
         </div>
     </div>
 
     <div class="life-popup" id="life-popup-traffic-2">
         <div class="life-popup_inner">
-            <img src="./public/img/live-traffic-pic-2.png" alt="">
+            <img class="popup-img" src="./public/img/live-traffic-pic-2.png" alt="">
         </div>
     </div>
 
     <div class="life-popup" id="life-popup-traffic-3">
         <div class="life-popup_inner">
-            <img src="./public/img/live-traffic-pic-3.png" alt="">
+            <img class="popup-img" src="./public/img/live-traffic-pic-3.png" alt="">
         </div>
     </div>
 
 
     <div class="life-popup" id="life-popup-life-1">
         <div class="life-popup_inner">
-            <img src="./public/img/live-life-pic-1.png" alt="">
+            <img class="popup-img" src="./public/img/live-life-pic-1.png" alt="">
         </div>
     </div>
 
     <div class="life-popup" id="life-popup-life-2">
         <div class="life-popup_inner">
-            <img src="./public/img/live-life-pic-2.png" alt="">
+            <img class="popup-img" src="./public/img/live-life-pic-2.png" alt="">
         </div>
     </div>
 
     <div class="life-popup" id="life-popup-life-3">
         <div class="life-popup_inner">
-            <img src="./public/img/live-life-pic-3.png" alt="">
+            <img class="popup-img" src="./public/img/live-life-pic-3.png" alt="">
         </div>
     </div>
 
     <div class="life-popup" id="life-popup-life-4">
         <div class="life-popup_inner">
-            <img src="./public/img/live-life-pic-4.png" alt="">
+            <img class="popup-img" src="./public/img/live-life-pic-4.png" alt="">
         </div>
     </div>
 
     <div class="life-popup" id="life-popup-life-5">
         <div class="life-popup_inner">
-            <img src="./public/img/live-life-pic-5.png" alt="">
+            <img class="popup-img" src="./public/img/live-life-pic-5.png" alt="">
         </div>
     </div>
 
     <div class="life-popup" id="life-popup-life-6">
         <div class="life-popup_inner">
-            <img src="./public/img/live-life-pic-6.png" alt="">
+            <img class="popup-img" src="./public/img/live-life-pic-6.png" alt="">
         </div>
     </div>
 
 
     <div class="life-popup" id="life-popup-school-1">
         <div class="life-popup_inner">
-            <img src="./public/img/live-school-pic-1.png" alt="">
+            <div class="life-popup_swiper popup-img">
+                <div class="swiper-container school-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./public/img/live-school-pic-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./public/img/live-school-pic-2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next" id="school-swiper-next">
+                    <img src="./public/img/swiper-arrow-next.svg" alt="">
+                </div>
+                <div class="swiper-button-prev" id="school-swiper-prev">
+                    <img src="./public/img/swiper-arrow-prev.svg" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
 
     <div class="life-popup" id="life-popup-leisure-1">
         <div class="life-popup_inner">
-            <img src="./public/img/live-leisure-pic-1.png" alt="">
+            <img class="popup-img" src="./public/img/live-leisure-pic-1.png" alt="">
         </div>
     </div>
 
     <div class="life-popup" id="life-popup-leisure-2">
         <div class="life-popup_inner">
-            <img src="./public/img/live-leisure-pic-2.png" alt="">
+            <img class="popup-img" src="./public/img/live-leisure-pic-2.png" alt="">
         </div>
     </div>
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/common.js"></script>
     <script>
-        $(".life-popup").click(function() {
-            $(this).fadeOut(300);
-        })
+        $(".life-popup").click(function (event) {
+            var popup = $(".popup-img");
+            if (!popup.is(event.target) && popup.has(event.target).length === 0) {
+                $(".life-popup").fadeOut(300);
+            }
+        });
 
         $(".life_map_pin").click(function() {
             let popup = $(this).data("popup");
@@ -204,6 +226,16 @@
             $(target).show();
             $(".life_btn_item").removeClass("active");
             $(this).addClass("active");
+        })
+
+        var swiperSchool = new Swiper(".school-swiper", {
+            slidesPerView: 1,
+            observeParents:true,
+            observer:true,
+            navigation: {
+                nextEl: "#school-swiper-next",
+                prevEl: "#school-swiper-prev",
+            },
         })
     </script>
 </body>
