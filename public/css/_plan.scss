@@ -157,9 +157,51 @@
             }
             .map {
                 position: absolute;
-                width: 68.99vw;
-                top: 11.12vw;
-                right: 3.7vw;
+                width: 72.67vw;
+                top: 4.9vw;
+                right: 0vw;
+            }
+            .btns {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                gap: 5px;
+                left: 14.52vw;
+                bottom: 4.52vw;
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    padding: 0 22px;
+                    border: 2px solid #589756;
+                    border-radius: 13px;
+                    transition: $transition;
+                    position: relative;
+                    img {
+                        width: 6px;
+                        position: absolute;
+                        top: 50%;
+                        left: 13px;
+                        transform: translateY(-50%);
+                        opacity: 0;
+                        transition: $transition;
+                    }
+                    span {
+                        color: #589756;
+                        font-size: 33px;
+                        font-weight: 700;
+                        transition: $transition;
+                    }
+                    &:hover {
+                        background-color: #589756;
+                        img {
+                            opacity: 1;
+                        }
+                        span {
+                            color: #fff;
+                        }
+                    }
+                }
             }
         }
         &-spacetitle {
@@ -226,90 +268,167 @@
                     position: absolute;
                     transition: $transition;
                     cursor: pointer;
+                    &_main {
+                        width: 100%;
+                    }
+                    &_text {
+                        position: absolute;
+                        width: 1.84vw;
+                    }
                     &:hover {
                         transform: scale(1.1);
                         z-index: 5;
                     }
                 }
+                .balcony {
+                    position: absolute;
+                    width: 5.02%;
+                    top: 33.42%;
+                    left: 9.37%;
+                }
                 &-b6 {
                     width: 18.2%;
                     top: 10.51%;
                     left: 14.55%;
+                    .map-item_text {
+                        top: 68%;
+                        left: 47%;
+                    }
                 }
                 &-b7 {
                     width: 15.2%;
                     top: 5.29%;
                     left: 32.4%;
+                    .map-item_text {
+                        top: 55.94%;
+                        left: 68%;
+                    }
                 }
                 &-b1 {
                     width: 19.5%;
                     top: 24.9%;
                     left: 15.8%;
+                    .map-item_text {
+                        top: 18%;
+                        left: 37%;
+                    }
                 }
                 &-b2 {
                     width: 16.2%;
                     top: 26.1%;
                     left: 32.5%;
+                    .map-item_text {
+                        top: 41%;
+                        left: 4%;
+                    }
                 }
                 &-b8 {
                     width: 15.19%;
                     top: 5.36%;
                     left: 61.08%;
+                    .map-item_text {
+                        top: 57%;
+                        left: 6%;
+                    }
                 }
                 &-b9 {
                     width: 17.9%;
                     top: 10.64%;
                     left: 76.07%;
+                    .map-item_text {
+                        top: 72%;
+                        left: 32%;
+                    }
                 }
                 &-b3 {
                     width: 16.2%;
                     top: 26.2%;
                     left: 60.27%;
+                    .map-item_text {
+                        top: 41%;
+                        left: 70%;
+                    }
                 }
                 &-b5 {
                     width: 19%;
                     top: 26.1%;
                     left: 73.8%;
+                    .map-item_text {
+                        top: 12%;
+                        left: 44%;
+                    }
                 }
                 &-a1 {
                     width: 19.39%;
                     top: 56.75%;
                     left: 15.86%;
+                    .map-item_text {
+                        top: 63%;
+                        left: 34%;
+                    }
                 }
                 &-a2 {
                     width: 20.07%;
                     top: 56.75%;
                     left: 32.47%;
+                    .map-item_text {
+                        top: 30%;
+                        left: 3%;
+                    }
                 }
                 &-a7 {
                     width: 15.1%;
                     top: 76.7%;
                     left: 32.47%;
+                    .map-item_text {
+                        top: 20%;
+                        left: 69%;
+                    }
                 }
                 &-a6 {
                     width: 17.9%;
                     top: 72.03%;
                     left: 14.64%;
+                    .map-item_text {
+                        top: 5%;
+                        left: 44%;
+                    }
                 }
                 &-a8 {
                     width: 15.15%;
                     top: 76.7%;
                     left: 61.08%;
+                    .map-item_text {
+                        top: 20%;
+                        left: 6%;
+                    }
                 }
                 &-a9 {
                     width: 17.97%;
                     top: 72.1%;
                     left: 76.1%;
+                    .map-item_text {
+                        top: 2%;
+                        left: 36%;
+                    }
                 }
                 &-a5 {
                     width: 19.12%;
                     top: 56.8%;
                     left: 73.8%;
+                    .map-item_text {
+                        top: 62%;
+                        left: 46%;
+                    }
                 }
                 &-a3 {
                     width: 21.49%;
                     top: 56.8%;
                     left: 56%;
+                    .map-item_text {
+                        top: 36%;
+                        left: 73%;
+                    }
                 }
             }
         }
@@ -557,6 +676,55 @@
                 left: 27px;
                 transform: translateY(-50%);
                 background-color: #37549F;
+            }
+        }
+    }
+    &-basement {
+        .inner {
+            &_bg {
+                background-image: url(../img/basement-bg.webp);
+            }
+            &_title {
+                &_ch {
+                    h1 {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &_remark {
+                position: absolute;
+                font-size: 16px;
+                font-weight: 300;
+                top: calc(8.48vw + 104px);
+                left: 8vw;
+            }
+        }
+        &_map {
+            width: 63.75vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &_link {
+            position: absolute;
+            width: 1.85vw;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: $transition;
+            >img {
+                width: 100%;
+            }
+            &:hover {
+                transform: translateY(-50%) scale(1.2);
+            }
+            &.prev {
+                left: 1.3vw;
+            }
+            &.next {
+                right: 1.5vw;
             }
         }
     }

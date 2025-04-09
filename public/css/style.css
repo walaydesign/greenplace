@@ -1273,7 +1273,7 @@ button {
 }
 
 .material_item a:hover .material_item_hover {
-  opacity: 1;
+  opacity: 0;
 }
 
 .material_item_circle {
@@ -1308,7 +1308,6 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #94B53E;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -2675,9 +2674,70 @@ button {
 
 .plan_inner-spaceall .map {
   position: absolute;
-  width: 68.99vw;
-  top: 11.12vw;
-  right: 3.7vw;
+  width: 72.67vw;
+  top: 4.9vw;
+  right: 0vw;
+}
+
+.plan_inner-spaceall .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  gap: 5px;
+  left: 14.52vw;
+  bottom: 4.52vw;
+}
+
+.plan_inner-spaceall .btns a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding: 0 22px;
+  border: 2px solid #589756;
+  border-radius: 13px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.plan_inner-spaceall .btns a img {
+  width: 6px;
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.plan_inner-spaceall .btns a span {
+  color: #589756;
+  font-size: 33px;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.plan_inner-spaceall .btns a:hover {
+  background-color: #589756;
+}
+
+.plan_inner-spaceall .btns a:hover img {
+  opacity: 1;
+}
+
+.plan_inner-spaceall .btns a:hover span {
+  color: #fff;
 }
 
 .plan_inner-spacetitle {
@@ -2757,10 +2817,26 @@ button {
   cursor: pointer;
 }
 
+.plan_inner-spacestandard .map-item_main {
+  width: 100%;
+}
+
+.plan_inner-spacestandard .map-item_text {
+  position: absolute;
+  width: 1.84vw;
+}
+
 .plan_inner-spacestandard .map-item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   z-index: 5;
+}
+
+.plan_inner-spacestandard .map .balcony {
+  position: absolute;
+  width: 5.02%;
+  top: 33.42%;
+  left: 9.37%;
 }
 
 .plan_inner-spacestandard .map-b6 {
@@ -2769,10 +2845,20 @@ button {
   left: 14.55%;
 }
 
+.plan_inner-spacestandard .map-b6 .map-item_text {
+  top: 68%;
+  left: 47%;
+}
+
 .plan_inner-spacestandard .map-b7 {
   width: 15.2%;
   top: 5.29%;
   left: 32.4%;
+}
+
+.plan_inner-spacestandard .map-b7 .map-item_text {
+  top: 55.94%;
+  left: 68%;
 }
 
 .plan_inner-spacestandard .map-b1 {
@@ -2781,10 +2867,20 @@ button {
   left: 15.8%;
 }
 
+.plan_inner-spacestandard .map-b1 .map-item_text {
+  top: 18%;
+  left: 37%;
+}
+
 .plan_inner-spacestandard .map-b2 {
   width: 16.2%;
   top: 26.1%;
   left: 32.5%;
+}
+
+.plan_inner-spacestandard .map-b2 .map-item_text {
+  top: 41%;
+  left: 4%;
 }
 
 .plan_inner-spacestandard .map-b8 {
@@ -2793,10 +2889,20 @@ button {
   left: 61.08%;
 }
 
+.plan_inner-spacestandard .map-b8 .map-item_text {
+  top: 57%;
+  left: 6%;
+}
+
 .plan_inner-spacestandard .map-b9 {
   width: 17.9%;
   top: 10.64%;
   left: 76.07%;
+}
+
+.plan_inner-spacestandard .map-b9 .map-item_text {
+  top: 72%;
+  left: 32%;
 }
 
 .plan_inner-spacestandard .map-b3 {
@@ -2805,10 +2911,20 @@ button {
   left: 60.27%;
 }
 
+.plan_inner-spacestandard .map-b3 .map-item_text {
+  top: 41%;
+  left: 70%;
+}
+
 .plan_inner-spacestandard .map-b5 {
   width: 19%;
   top: 26.1%;
   left: 73.8%;
+}
+
+.plan_inner-spacestandard .map-b5 .map-item_text {
+  top: 12%;
+  left: 44%;
 }
 
 .plan_inner-spacestandard .map-a1 {
@@ -2817,10 +2933,20 @@ button {
   left: 15.86%;
 }
 
+.plan_inner-spacestandard .map-a1 .map-item_text {
+  top: 63%;
+  left: 34%;
+}
+
 .plan_inner-spacestandard .map-a2 {
   width: 20.07%;
   top: 56.75%;
   left: 32.47%;
+}
+
+.plan_inner-spacestandard .map-a2 .map-item_text {
+  top: 30%;
+  left: 3%;
 }
 
 .plan_inner-spacestandard .map-a7 {
@@ -2829,10 +2955,20 @@ button {
   left: 32.47%;
 }
 
+.plan_inner-spacestandard .map-a7 .map-item_text {
+  top: 20%;
+  left: 69%;
+}
+
 .plan_inner-spacestandard .map-a6 {
   width: 17.9%;
   top: 72.03%;
   left: 14.64%;
+}
+
+.plan_inner-spacestandard .map-a6 .map-item_text {
+  top: 5%;
+  left: 44%;
 }
 
 .plan_inner-spacestandard .map-a8 {
@@ -2841,10 +2977,20 @@ button {
   left: 61.08%;
 }
 
+.plan_inner-spacestandard .map-a8 .map-item_text {
+  top: 20%;
+  left: 6%;
+}
+
 .plan_inner-spacestandard .map-a9 {
   width: 17.97%;
   top: 72.1%;
   left: 76.1%;
+}
+
+.plan_inner-spacestandard .map-a9 .map-item_text {
+  top: 2%;
+  left: 36%;
 }
 
 .plan_inner-spacestandard .map-a5 {
@@ -2853,10 +2999,20 @@ button {
   left: 73.8%;
 }
 
+.plan_inner-spacestandard .map-a5 .map-item_text {
+  top: 62%;
+  left: 46%;
+}
+
 .plan_inner-spacestandard .map-a3 {
   width: 21.49%;
   top: 56.8%;
   left: 56%;
+}
+
+.plan_inner-spacestandard .map-a3 .map-item_text {
+  top: 36%;
+  left: 73%;
 }
 
 .plan_inner-floor .compass {
@@ -3145,6 +3301,58 @@ button {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: #37549F;
+}
+
+.plan-basement .inner_bg {
+  background-image: url(../img/basement-bg.webp);
+}
+
+.plan-basement .inner_title_ch h1::before {
+  display: none;
+}
+
+.plan-basement .inner_remark {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 300;
+  top: calc(8.48vw + 104px);
+  left: 8vw;
+}
+
+.plan-basement_map {
+  width: 63.75vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.plan-basement_link {
+  position: absolute;
+  width: 1.85vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.plan-basement_link > img {
+  width: 100%;
+}
+
+.plan-basement_link:hover {
+  -webkit-transform: translateY(-50%) scale(1.2);
+          transform: translateY(-50%) scale(1.2);
+}
+
+.plan-basement_link.prev {
+  left: 1.3vw;
+}
+
+.plan-basement_link.next {
+  right: 1.5vw;
 }
 
 .craftsmanship {
