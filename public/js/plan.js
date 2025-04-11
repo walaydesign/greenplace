@@ -52,6 +52,8 @@ $(".map_room").click(function() {
     $(".map_room").removeClass("active");
     $(this).addClass("active");
     let roomTarget = "#floor-pic-" + room;
+    let index = $(roomTarget).index();
+    floorInfoChange(index);
     $(roomTarget).addClass("active").siblings(".floor-pic_item").removeClass("active");
 })
 
@@ -66,6 +68,8 @@ $(".map-item").click(function() {
     $(".map_room").removeClass("active");
     $(".plan_inner-floor .map_room" + roomFloor).addClass("active");
     let roomTarget = "#floor-pic-" + room;
+    let index = $(roomTarget).index();
+    floorInfoChange(index);
     $(roomTarget).addClass("active").siblings(".floor-pic_item").removeClass("active");
 })
 
@@ -74,3 +78,80 @@ $(".pic-3d_tab button").click(function() {
     $(target).addClass("active").siblings(".pic-3d_pic_item").removeClass("active");
     $(this).addClass("active").parents("li").siblings("li").find("button").removeClass("active");
 })
+
+
+
+let floorInfo = [
+    {
+        room: "A1",
+        size: "28.23",
+    },
+    {
+        room: "A2",
+        size: "26.9",
+    },
+    {
+        room: "A3",
+        size: "26.9",
+    },
+    {
+        room: "A5",
+        size: "28.23",
+    },
+    {
+        room: "A6",
+        size: "33.54",
+    },
+    {
+        room: "A7",
+        size: "23.34",
+    },
+    {
+        room: "A8",
+        size: "23.34",
+    },
+    {
+        room: "A9",
+        size: "33.54",
+    },
+    {
+        room: "B1",
+        size: "28.39",
+    },
+    {
+        room: "B2",
+        size: "27.05",
+    },
+    {
+        room: "B3",
+        size: "27.05",
+    },
+    {
+        room: "B5",
+        size: "28.39",
+    },
+    {
+        room: "B6",
+        size: "33.74",
+    },
+    {
+        room: "B7",
+        size: "23.46",
+    },
+    {
+        room: "B8",
+        size: "23.46",
+    },
+    {
+        room: "B9",
+        size: "33.74",
+    }
+];
+
+function floorInfoChange(i) {
+    let infoRoom = floorInfo[i].room;
+    let infoSize = floorInfo[i].size;
+
+    $(".floor-size_room").text(infoRoom);
+    $(".floor-size_content .num").text(infoSize);
+}

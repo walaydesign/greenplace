@@ -3093,6 +3093,98 @@ button {
   top: 5vw;
 }
 
+.plan_inner-floor .floor-size {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #87b941;
+  right: 10.46vw;
+  bottom: 19.7vw;
+}
+
+.plan_inner-floor .floor-size img {
+  width: 10px;
+}
+
+.plan_inner-floor .floor-size_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan_inner-floor .floor-size_room {
+  font-size: 38px;
+  font-weight: 700;
+  color: #206fb2;
+  padding-right: 11px;
+  position: relative;
+  line-height: 1;
+}
+
+.plan_inner-floor .floor-size_room::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 22px;
+  background-color: #206fb2;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.plan_inner-floor .floor-size_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-left: 11px;
+}
+
+.plan_inner-floor .floor-size_content p {
+  line-height: 1;
+  margin: 0;
+}
+
+.plan_inner-floor .floor-size_content .num {
+  color: #206fb2;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.plan_inner-floor .floor-size_content .unit {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #206fb2;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
 .plan_inner-realpic .realpic_main {
   position: absolute;
   width: 57.05vw;
@@ -3307,6 +3399,12 @@ button {
   background-image: url(../img/basement-bg.webp);
 }
 
+.plan-basement .inner_title_ch {
+  border-radius: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(29, 89, 169, 0)), color-stop(48%, #1D59A9), to(#1D59A9));
+  background: linear-gradient(to left, rgba(29, 89, 169, 0) 0%, #1D59A9 48%, #1D59A9 100%);
+}
+
 .plan-basement .inner_title_ch h1::before {
   display: none;
 }
@@ -3431,7 +3529,7 @@ button {
 
 .craftsmanship_item_title {
   position: absolute;
-  padding: 12px 0 12px 20px;
+  padding: 12px 0 12px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3444,6 +3542,7 @@ button {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: 0;
 }
 
 .craftsmanship_item_title h3 {
@@ -3465,9 +3564,28 @@ button {
   white-space: nowrap;
 }
 
+.craftsmanship_item_title::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 26.35px;
+  background-image: url(../img/craft-triangle.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 .craftsmanship_item:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.craftsmanship_item:hover .craftsmanship_item_title {
+  background: -webkit-gradient(linear, left top, right top, from(#e95514), to(transparent));
+  background: linear-gradient(to right, #e95514 0%, transparent 100%);
 }
 
 .earthquake_inner {
