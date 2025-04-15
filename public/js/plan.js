@@ -155,3 +155,38 @@ function floorInfoChange(i) {
     $(".floor-size_room").text(infoRoom);
     $(".floor-size_content .num").text(infoSize);
 }
+
+var swiperBasement = new Swiper(".plan-basement_swiper", {
+    slidesPerView: 1,
+    loop: true,
+    observeParents:true,
+    observer:true,
+    allowTouchMove: false,
+    navigation: {
+        nextEl: ".plan-basement-next",
+        prevEl: ".plan-basement-prev",
+    },
+})
+
+var swiperBasementTitle = new Swiper(".plan-basement_title", {
+    slidesPerView: 1,
+    loop: true,
+    observeParents:true,
+    observer:true,
+    allowTouchMove: false,
+    navigation: {
+        nextEl: ".plan-basement-next",
+        prevEl: ".plan-basement-prev",
+    },
+})
+
+$(".spaceall-btn button").click(function() {
+    $(".popup-basement").fadeIn(300);
+    let index = $(this).index() + 1;
+    swiperBasement.slideTo(index, 1000, true);
+    swiperBasementTitle.slideTo(index, 1000, true);
+})
+
+$(".popup-basement .btn-close").click(function() {
+    $(this).parents(".popup-basement").fadeOut(300);
+})

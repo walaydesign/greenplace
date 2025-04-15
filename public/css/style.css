@@ -2675,7 +2675,7 @@ button {
 .plan_inner-spaceall .map {
   position: absolute;
   width: 72.67vw;
-  top: 4.9vw;
+  top: 7.9vw;
   right: 0vw;
 }
 
@@ -2692,7 +2692,7 @@ button {
   bottom: 4.52vw;
 }
 
-.plan_inner-spaceall .btns a {
+.plan_inner-spaceall .btns button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2708,7 +2708,7 @@ button {
   position: relative;
 }
 
-.plan_inner-spaceall .btns a img {
+.plan_inner-spaceall .btns button img {
   width: 6px;
   position: absolute;
   top: 50%;
@@ -2720,7 +2720,7 @@ button {
   transition: 0.3s;
 }
 
-.plan_inner-spaceall .btns a span {
+.plan_inner-spaceall .btns button span {
   color: #589756;
   font-size: 33px;
   font-weight: 700;
@@ -2728,15 +2728,15 @@ button {
   transition: 0.3s;
 }
 
-.plan_inner-spaceall .btns a:hover {
+.plan_inner-spaceall .btns button:hover {
   background-color: #589756;
 }
 
-.plan_inner-spaceall .btns a:hover img {
+.plan_inner-spaceall .btns button:hover img {
   opacity: 1;
 }
 
-.plan_inner-spaceall .btns a:hover span {
+.plan_inner-spaceall .btns button:hover span {
   color: #fff;
 }
 
@@ -3395,14 +3395,33 @@ button {
   background-color: #37549F;
 }
 
+.plan-basement_title {
+  width: 400px;
+}
+
 .plan-basement .inner_bg {
   background-image: url(../img/basement-bg.webp);
+}
+
+.plan-basement .inner_title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .plan-basement .inner_title_ch {
   border-radius: 0;
   background: -webkit-gradient(linear, right top, left top, from(rgba(29, 89, 169, 0)), color-stop(48%, #1D59A9), to(#1D59A9));
   background: linear-gradient(to left, rgba(29, 89, 169, 0) 0%, #1D59A9 48%, #1D59A9 100%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.plan-basement .inner_title_ch h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .plan-basement .inner_title_ch h1::before {
@@ -3418,12 +3437,16 @@ button {
 }
 
 .plan-basement_map {
-  width: 63.75vw;
+  width: 100%;
+}
+
+.plan-basement_swiper {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 63.75vw;
 }
 
 .plan-basement_link {
@@ -3451,6 +3474,34 @@ button {
 
 .plan-basement_link.next {
   right: 1.5vw;
+}
+
+.popup-basement {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/material-bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.popup-basement .btn-close {
+  position: absolute;
+  width: 70px;
+  right: 2vw;
+  bottom: 2vw;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popup-basement .btn-close:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .craftsmanship {

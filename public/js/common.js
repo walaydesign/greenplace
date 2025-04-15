@@ -20,14 +20,18 @@ function nav() {
 
 $(".btn-back").click(function() {
     if($(this).parents(".container").hasClass("plan-basement")) {
+        console.log("@@@");
+        
         let url = "./plan.html";
         window.location.assign(url);
 
         // $(".plan_inner").removeClass("active");
         // $(".plan_inner.plan_inner-spaceall").addClass("active");
+        
+        $(".plan_nav_item").removeClass("active");
+        $(".plan_nav_item.plan_nav-space").addClass("active");
 
-        // $(".plan_nav_item").removeClass("active");
-        // $(".plan_nav_item.plan_nav-space").addClass("active");
+        
 
         // $(".plan_space_all").addClass("active").siblings("li").removeClass("active");
     }else {
